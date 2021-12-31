@@ -1,14 +1,18 @@
-import React from 'react'
-import Container from './components/Container'
-import ProductList from './components/ProductList'
-import data from './examples/products.json'
+import React from "react";
+import Container from "./components/Container";
+import ProductList from "./components/Products/ProductList";
+import data from "./examples/products.json";
+import Header from "./components/Header";
 
 const App = () => {
-    return (
-    <Container>
-        <ProductList products={data.products}/>
-    </Container>
-    )
-}
+  return (
+    <>
+      <Header />
+      <Container>
+        <ProductList products={data.products} />
+      </Container>
+    </>
+  );
+};
 
-export default App
+export default App;
