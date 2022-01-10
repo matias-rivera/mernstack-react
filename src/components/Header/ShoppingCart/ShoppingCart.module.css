@@ -1,0 +1,46 @@
+.cart {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  font-size: 1.2rem;
+}
+
+.items {
+  position: absolute;
+  display: none;
+  top: 100%;
+  right: 0;
+  font-size: 1rem;
+  width: 300%;
+}
+
+.cart:hover .items {
+  display: flex;
+  flex-direction: column;
+}
+
+.total {
+  padding: 0.2rem 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  background: #2452b4;
+  font-size: 1.1rem;
+}
+
+.total span {
+  margin-left: 1rem;
+  color: #17e44a;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .cart {
+    font-size: 1rem;
+  }
+
+  .items {
+    width: 90vw;
+  }
+}
