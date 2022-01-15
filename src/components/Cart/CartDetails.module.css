@@ -1,0 +1,112 @@
+.cart {
+  background: #fff;
+  padding: 1rem;
+  margin: 1rem 10rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.productsList ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.productsList ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
+}
+
+.productsList ul li > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.productsList ul li .infoSection img {
+  max-width: 3rem;
+}
+
+.cartInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cartInfo button {
+  max-width: 10rem;
+}
+
+.buttonGroup {
+  display: flex;
+}
+
+.buttonGroup * {
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  padding: 0.5rem;
+  transition: all 0.2s;
+}
+
+.buttonGroup button.left {
+  border: 1px solid #e6e6e6;
+  border-right: none;
+}
+
+.buttonGroup button.right {
+  border-left: none;
+}
+
+.buttonGroup span.center {
+  border-left: none;
+  border-right: none;
+}
+
+.buttonGroup button:hover {
+  background: #e6e6e6;
+  cursor: pointer;
+}
+
+.buttonGroup button {
+  font-weight: 600;
+}
+
+.buttonDelete {
+  color: #fff;
+  background-color: #ff0000;
+  border: none;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.buttonDelete > * {
+  padding: 0.3rem;
+}
+
+.buttonDelete:hover {
+  background-color: #a80000;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .cart {
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+  .productsList ul li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .productsList ul li div.actionSection {
+    align-self: flex-end;
+  }
+}

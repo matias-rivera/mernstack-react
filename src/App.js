@@ -1,15 +1,21 @@
 import React from "react";
 import Container from "./components/Container";
-import ProductList from "./components/Products/ProductList";
-import data from "./examples/products.json";
 import Header from "./components/Header";
+import ProductView from "./views/ProductView";
+import CartView from "./views/CartView";
+import Home from "./views/Home";
+import { Route, Switch } from "react-router-dom";
 
 const App = () => {
   return (
     <>
       <Header />
       <Container>
-        <ProductList products={data.products} />
+        <Switch>
+          <Route path={"/product/:id"} exact component={ProductView} />
+          <Route path={"/cart"} exact component={CartView} />
+          <Route path={"/"} exact component={Home} />
+        </Switch>
       </Container>
     </>
   );
