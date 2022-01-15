@@ -1,0 +1,28 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  height: 70px;
+  background-color: #2452b4;
+  color: #f7f7f7;
+  position: fixed;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: white;
+  font-family: "Fira", sans-serif;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f7f7f7;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    font-size: 2.5rem;
+  }
+}

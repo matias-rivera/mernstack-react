@@ -1,0 +1,32 @@
+.item {
+  padding: 0.2rem 0.5rem;
+  background: #f5f5f5;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+.item:not(:last-child) {
+  border-bottom: 0;
+}
+
+.item:hover {
+  background-color: #4d83f8;
+  color: #fff;
+}
+
+.item button {
+  color: red;
+  padding: 0 0.5rem;
+  border: none;
+  background: none;
+}
+
+.item button:hover {
+  cursor: pointer;
+}
+
+.item div {
+  display: flex;
+}
