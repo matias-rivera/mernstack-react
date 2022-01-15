@@ -7,6 +7,14 @@
   font-size: 1.2rem;
 }
 
+.cart a > h4 {
+  color: #fff;
+}
+
+.cart a > h4:hover {
+  color: #49cbff;
+}
+
 .items {
   position: absolute;
   display: none;
@@ -33,6 +41,25 @@
   margin-left: 1rem;
   color: #17e44a;
   font-weight: 600;
+}
+
+.carrito {
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  background: #0671eb;
+  font-size: 1.1rem;
+  transition: all 0.2s;
+}
+
+.carrito:hover {
+  background: #0035a7;
+}
+
+.carrito h4 {
+  margin-left: 1rem;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 @media (max-width: 768px) {
